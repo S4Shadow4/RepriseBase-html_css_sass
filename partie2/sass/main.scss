@@ -1,0 +1,41 @@
+@mixin usual($height: 100vh, $width: 100%, $bgc: white) {
+  height: $height;
+  width: $width;
+  background-color: $bgc;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.test {
+  @include usual(100vh, 100%, white);
+  display: flex;
+  justify-content: space-around;
+  &1 {
+    @include usual(60%, 20%, blue);
+    text-decoration: line-through;
+    &:hover {
+      background-color: aqua;
+    }
+  }
+  &2 {
+    @include usual(60%, 20%, orange);
+    text-decoration: overline;
+  }
+  &3 {
+    @include usual(60%, 20%, gray);
+    text-decoration: underline;
+  }
+}
+.link {
+  a {
+    text-decoration: none;
+    &:active {
+      color: violet;
+    }
+    &:visited {
+      color: yellowgreen;
+    }
+  }
+}

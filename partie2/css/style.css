@@ -1,0 +1,45 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.test {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.test1 {
+  height: 60%;
+  width: 20%;
+  background-color: blue;
+  text-decoration: line-through;
+}
+.test1:hover {
+  background-color: aqua;
+}
+.test2 {
+  height: 60%;
+  width: 20%;
+  background-color: orange;
+  text-decoration: overline;
+}
+.test3 {
+  height: 60%;
+  width: 20%;
+  background-color: gray;
+  text-decoration: underline;
+}
+
+.link a {
+  text-decoration: none;
+}
+.link a:active {
+  color: violet;
+}
+.link a:visited {
+  color: yellowgreen;
+}
+
+/*# sourceMappingURL=style.css.map */
