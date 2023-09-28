@@ -34,6 +34,7 @@ body {
 
 .link a {
   text-decoration: none;
+  font-size: 6em;
 }
 .link a:active {
   color: violet;

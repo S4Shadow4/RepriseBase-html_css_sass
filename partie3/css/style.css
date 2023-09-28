@@ -1,0 +1,33 @@
+header {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Petit essai de rappel  */
+.test {
+  font-size: 2em;
+}
+.test:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.link:active {
+  color: blue;
+}
+.link:visited {
+  color: violet;
+}
+
+/*# sourceMappingURL=style.css.map */

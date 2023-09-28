@@ -1,0 +1,35 @@
+@mixin usual($height: 100vh, $width: 100%, $bgc: white) {
+  height: $height;
+  width: $width;
+  background-color: $bgc;
+}
+
+header {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+/* Petit essai de rappel  */
+.test {
+  &:hover {
+    color: orange;
+    text-decoration: underline;
+  }
+  font-size: 2em;
+}
+.link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+    color: blue;
+  }
+  &:visited {
+    color: violet;
+  }
+}
