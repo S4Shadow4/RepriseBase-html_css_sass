@@ -1,0 +1,64 @@
+@mixin usual($height: 100vh, $width: 100%, $bgc: white) {
+  height: $height;
+  width: $width;
+  background-color: $bgc;
+}
+@mixin usual1($justify: center, $align: center, $display: block) {
+  justify-content: $justify;
+  align-items: $align;
+  display: $display;
+}
+header {
+  margin: 0%;
+  padding: 0%;
+  @include usual(70px, 100%, orange);
+  position: fixed;
+  top: 0%;
+  opacity: 0.8;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+  @include usual(100vh, 100%, white);
+}
+.text {
+  @include usual(70px, 100%, gray);
+  opacity: 0.3;
+}
+.list {
+  list-style-type: none;
+  @include usual1(space-around, center, flex);
+}
+#h2TitreTableau {
+  @include usual1(center, center, flex);
+  font-size: 2em;
+  &:hover {
+    text-decoration: underline;
+    color: aqua;
+  }
+}
+.tableau {
+  @include usual1(center, center, flex);
+  margin-bottom: 10%;
+}
+table {
+  border-collapse: collapse;
+  font-size: 2em;
+}
+th,
+td {
+  border: 1px solid black;
+}
+.colspan1 {
+  border: none;
+}
+.form {
+  td,
+  th {
+    border: none;
+    font-size: initial;
+  }
+  @include usual1(center, center, flex);
+  border-collapse: none;
+  padding: 15%;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="menu">
+          <ul class="list">
+            <li>Accueil</li>
+            <li>Nos Services</li>
+            <li>Apropos</li>
+          </ul>
+        </div>
+      </header>
+      <div class="text">
+        <!--         <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor modi
+          nobis eum obcaecati, esse eius, rem repudiandae magni vitae officia
+          illum unde quasi corporis explicabo incidunt magnam alias labore
+          dignissimos! Sed quos distinctio fugit optio accusantium deserunt
+          provident eveniet in, autem similique aspernatur labore. Quisquam
+          veniam, expedita deleniti a quae reiciendis odit corporis dignissimos
+          vitae temporibus officiis consequuntur molestiae sapiente excepturi
+          totam eveniet. Debitis rerum, alias odit commodi nemo asperiores
+          adipisci delectus! Quis repellendus illo omnis excepturi fugiat iure
+          dignissimos consectetur sed, aliquid delectus, rerum voluptatem
+          similique nemo. Eaque consectetur possimus quaerat assumenda
+          doloremque earum ex provident explicabo necessitatibus eveniet?
+        </p> -->
+      </div>
+      <h2 id="h2TitreTableau">Tableau de notes</h2>
+      <div class="tableau">
+        <table>
+          <caption>
+            Liste de notes de la seconde D
+          </caption>
+          <thead>
+            <th class="colspan1"></th>
+            <th colspan="4">Notes</th>
+          </thead>
+          <thead>
+            <th>Nom</th>
+            <th>Maths</th>
+            <th>Phys</th>
+            <th>Svt</th>
+            <th>Eps</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Koffi</td>
+              <td>13</td>
+              <td>15</td>
+              <td>17</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Abalo</td>
+              <td>9</td>
+              <td>3</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <form  class="form">
+        <table>
+          <tbody>
+            <!-- input de type text pour nom,prenom,password(type:password) -->
+            <tr>
+              <td>
+                <label for="userName">User name:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="userName"
+                  id="userName"
+                  required
+                  placeholder="User name"
+                />
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="firstName">First name:</label>
+                </td>
+                <td>
+                 <input
+                  type="text"
+                  name="firstName"
+                  required
+                  placeholder="First name"
+                 />
+                </td>
+            </tr >
+            <td>
+              <label for="Password">Password:</label>
+            </td>
+            <td>
+              <input type="password" required placeholder="Password" />
+            </td>
+            </tr>
+
+            <!-- input et label de type checkbox pour les qualités -->
+            <tr>
+                <td colspan="2">
+                    <label for="qualite">Quel sont vos qualités?</label>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <input type="checkbox" name="poli" id="poli" value="poli" />
+                    <label for="poli">Poli</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="assidu" id="assidu" value="assidu" />
+                    <label for="assidu">Assidu</label>
+                </td>
+            </tr>
+
+            <!-- input de type radio pour les regions -->
+            <tr>
+                <td colspan="2">
+                    <label for="region">De quelle region venez-vous?</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="choix" />
+                    <label for="region_maritime"> Region maritime</label>
+                </td>
+                <td>
+                    <input type="radio" name="choix" />
+                    <label for="region_des_savanes"> Region des savanes</label>
+                </td>
+            </tr>
+
+            <!-- select pour le quartier avec les options  -->
+            <tr>
+                <td colspan="2">
+                    <label for="quartier">Quel est votre quartier d'origine?</label>
+                    <select name="quartier" id="quartier">
+                     <option value="Hedzranawoe">Hédzranawoé</option>
+                     <option value="Akoressewa">Akoressewa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button>Valider</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </main>
+  </body>
+</html>
