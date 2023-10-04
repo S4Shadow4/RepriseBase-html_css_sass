@@ -1,0 +1,43 @@
+@mixin usual($height: 100vh, $width: 100%, $bgc: white) {
+  height: $height;
+  width: $width;
+  background-color: $bgc;
+}
+body {
+  @include usual(150vh, 100%, white);
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+#comments {
+  resize: none;
+  box-shadow: -3px 2px 6px #000 inset;
+}
+.life {
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+}
+.text {
+  /*   color: #a900a9; */
+  /* color: rgba(255, 000, 000, 0.5); */
+  color: #ed600e;
+}
+.p1 {
+  line-height: 20px;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  text-shadow: 6px 6px 6px #000;
+}
+.p2 {
+  letter-spacing: -20px;
+  text-align: right;
+}
+.btn1 {
+  /* border: 1px solid #000; */
+  border-style: ridge;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
