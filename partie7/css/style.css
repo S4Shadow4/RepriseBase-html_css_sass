@@ -1,0 +1,197 @@
+@charset "UTF-8";
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  box-shadow: 3px 3px 7px #000;
+  float: left;
+}
+
+.p1 {
+  display: none;
+}
+
+.p2 {
+  clear: right; /* Pour annuler le float d'un element qui va venir flotter par defaut autour de l'element flottant */
+  overflow: hidden; /* Pour cacher l'element qui depasse */
+  overflow: scroll; /* Pour le read more */
+}
+
+.firsth3 {
+  display: inline-block;
+  border: 1px solid black;
+  width: 60%;
+  position: absolute;
+  z-index: 100;
+}
+
+.p3 {
+  /* display: inline-block; */
+  border: 1px solid black;
+  width: 40%;
+}
+
+.secondh3 {
+  float: right;
+}
+
+.images {
+  border: 1px solid black;
+  display: inline-block;
+  width: 100%;
+  background-image: url(../images/medecine1.jpg), url(../images/medecine2.jpg);
+  background-size: cover; /* Pour le redimensionnement de l'image */
+  background-attachment: fixed, fixed; /* Pour fixer l'image dans la position qu'on lui aurait donnée */
+  background-position: top left, top right;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.degradeL {
+  background: -webkit-linear-gradient(90deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.1));
+  background: -o-linear-gradient(90deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.1));
+  background: -moz-linear-gradient(90deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.1));
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.1));
+}
+
+.degargeR {
+  background: -moz-radial-gradient(circle, blue 10%, purple, red);
+  background: -o-radial-gradient(circle, blue 10%, purple, red);
+  background: -webkit-radial-gradient(circle, blue 10%, purple, red);
+  background: radial-gradient(circle, blue 10%, purple, red);
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 5%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: orange;
+}
+
+tr:nth-child(odd) {
+  background-color: #865;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+  padding: 10px;
+  border: 1px dashed #ccc;
+}
+
+.aud {
+  border-radius: initial;
+  background-attachment: fixed;
+}
+
+/* * {
+  border: 1px solid black;
+} */
+div [class] {
+  border: 1px dashed black;
+}
+
+h1:hover {
+  color: #865;
+}
+
+div > h3 {
+  color: orange;
+}
+
+div + h3 {
+  color: green;
+}
+
+p:first-child {
+  /*  background: -webkit-radial-gradient(circle, purple, blue, orange, gray);
+  background: -moz-radial-gradient(circle, purple, blue, orange, gray);
+  background: radial-gradient(circle, purple, blue, orange, gray); */
+}
+
+p:last-child {
+  /* background: -webkit-linear-gradient(90deg, purple, blue, orange, gray 10%);
+  background: -moz-linear-gradient(90deg, purple, blue, orange, gray 10%);
+  background: linear-gradient(90deg, purple, blue, orange, gray 10%); */
+}
+
+P:nth-child(even) {
+  font-size: 2em;
+}
+
+p::first-letter {
+  text-transform: capitalize;
+  color: gray;
+}
+
+p::first-line {
+  text-decoration: underline;
+}
+
+p::-moz-selection {
+  background-color: orangered;
+}
+
+p::selection {
+  background-color: orangered;
+}
+
+figcaption::after {
+  content: "Je suis un texte ecrit en css";
+}
+
+figcaption::before {
+  content: url(../images/zoro.jpg);
+}
+
+.logo #app,
+.logo #mes,
+.logo #wp,
+.logo #tw {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  /*     box-shadow: 4px 4px 10px #000; */
+}
+
+#app {
+  background-image: url(../images/logos-s.jpg);
+  background-position: 0px 0px; /* horizontal et vertitacl */
+}
+
+#mes {
+  background-image: url(../images/logos-s.jpg);
+  background-position: -48px 0px;
+  left: 200px;
+}
+
+#wp {
+  background-image: url(../images/logos-s.jpg);
+  background-position: -97px 0px;
+  left: 400px;
+}
+
+#tw {
+  background-image: url(../images/logos-s.jpg);
+  background-position: -195px 0px;
+  left: 600px;
+  bottom: -200px 200px;
+}
+
+#espace {
+  padding-top: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div>
+        <!-- Essai de formulaire -->
+        <form action="exemple.php" method="post">
+          <!-- input de type date -->
+          <label for="date">Selectionnez la date du jour</label>
+          <input type="date" id="date" name="date" /><br />
+
+          <!--input de type email  -->
+          <label for="email">email:</label>
+          <input type="email" id="email" name="email" /> <br />
+
+          <!-- input de type url -->
+          <label for="url">Entrez le lien vers votre site</label>
+          <input type="url" id="url" name="link" /><br />
+
+          <!-- input de type number -->
+          <label for="number">Entrez votre numéro:</label>
+          <input type="number" id="number" name="number" /><br />
+
+          <!-- Commentaire -->
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="Comments"
+          ></textarea
+          ><br />
+
+          <!-- input de type radio -->
+          <p>Quelle est votre région d'origine?</p>
+          <input
+            type="radio"
+            name="region"
+            id="maritime"
+            value="maritime"
+            checked="checked"
+          />
+          <label for="maritime">maritime</label>
+          <input type="radio" name="region" id="sokode" value="sokode" />
+          <label for="sokode">sokode</label>
+
+          <!-- input de type checkbox -->
+          <p>Quel animal préférez-vous?</p>
+          <input type="checkbox" id="cochon" name="animal" value="cochon" />
+          <label for="cochon">cochon</label>
+          <input type="checkbox" name="animal" id="canard" value="canard" />
+          <label for="canard"> canard</label><br />
+
+          <!-- select and option -->
+          <select name="choice" id="choice">
+            <optgroup label="Les meilleurs fruits">
+              <option value="orange" name="choix">orange</option>
+              <option value="banane" name="choix">banane</option>
+            </optgroup>
+            <optgroup label="les sous-estimés">
+              <option value="papaye" name="choix" selected="selected">
+                papaye
+              </option>
+              <option value="goyave" name="choix">gayave</option>
+            </optgroup></select
+          ><br />
+
+          <button type="submit" value="send">send</button>
+        </form>
+      </div>
+
+      <div>
+        <!--Les attributs des formulaires auto-complete, auto-focus, required, selected, checked, placeholder,min,max -->
+        <form action="traitement.php" method="post">
+          <label for="prenom">prenom:</label>
+          <input
+            type="text"
+            id="prenom"
+            name="prenom"
+            autocomplete=""
+            autofocus="on"
+            required="required"
+          />
+          <br />
+          <input type="submit" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <header></header>
+        <!-- La proprieté display -->
+        <div class="div1">
+          <h1>Je suis le titre</h1>
+          <p class="p1">Je suis le 1ere paragraphe</p>
+          <p class="p2">Je suis le paragraphe deux</p>
+        </div>
+
+        <!-- La propriete position et le z-index pour eviter les confusions entre des elements qui se chevauchent -->
+        <div class="div2">
+          <h3 class="firsth3">Je suis le texte moyennement perçu</h3>
+          <p class="p3">Je suis le paragraphe numero3</p>
+        </div>
+        <h3>Test</h3>
+
+        <!-- Proprieté float et clear -->
+        <div class="div3">
+          <h3 class="secondh3">Je suis le texte de la proprieté float</h3>
+          <p class="p4">Je suis le paragraphe de la proprieté clear</p>
+        </div>
+        <!-- test de plusieurs images et leur ajout en quelques sortes -->
+        <div class="images">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+            dolor nulla architecto similique ea accusamus hic modi reiciendis
+            aspernatur est aut, libero porro quo cupiditate at unde consequatur
+            autem, dicta, earum illo id tempora? Laudantium, sit placeat. Quo
+            repellendus quam ducimus, illum sapiente veniam expedita. Sunt
+            pariatur doloribus maxime veritatis eveniet accusamus necessitatibus
+            quisquam labore rem sequi laboriosam saepe architecto commodi omnis,
+            nostrum, et odit dolorem, enim laudantium adipisci quia? Esse dicta
+            ipsa ex ut! Quisquam quia voluptatibus, culpa omnis hic, dolor eum
+            deleniti qui alias corporis autem adipisci! Quaerat, sapiente minima
+            aliquid, dignissimos autem reprehenderit rerum dolores at libero
+            voluptates soluta eligendi molestiae repellat sint porro
+            praesentium! Explicabo dignissimos ut, fugiat eligendi voluptates
+            temporibus officia inventore voluptate dolorum suscipit magnam
+            itaque quidem aliquam reiciendis odit aut eaque eum accusantium
+            necessitatibus non error iure. Corrupti soluta architecto
+            consectetur accusantium recusandae est porro cupiditate debitis
+            facilis pariatur, facere consequatur nesciunt voluptatibus.
+          </p>
+        </div>
+        <!-- Degradé lineaire -->
+        <div class="degradeL">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            ex, debitis iure eum perspiciatis nisi ea ipsam ratione non delectus
+            labore aliquid, natus et laudantium est nobis! Voluptates
+            repudiandae exercitationem ab blanditiis laborum eum rem perferendis
+            assumenda alias sint debitis ipsum, dolores ipsam quis? Accusantium
+            id debitis minima? Molestiae, quos.
+          </p>
+        </div>
+
+        <!-- Degradé radiaux -->
+        <div class="degargeR">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quidem
+          qui excepturi dolor quae enim officiis repellat corporis? Vel
+          consectetur quia, asperiores dicta iste vitae voluptatem laborum,
+          ducimus debitis incidunt pariatur blanditiis tenetur repellat, magnam
+          earum ea temporibus? Quis, praesentium. Minus hic beatae dolor, aut
+          consequatur magni neque atque quis!
+        </div>
+
+        <!-- Revision sur les tableaux -->
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Mois</th>
+                <th>Depenses</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td>Somme</td>
+                <td>1300$</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>Fevrier</td>
+                <td>300$</td>
+              </tr>
+              <tr>
+                <td>Decembre</td>
+                <td>1000$</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- Tableau pour des tests -->
+          <section>
+            <table>
+              <caption>
+                Tableau d'essai
+              </caption>
+              <thead>
+                <tr>
+                  <th colspan="3">Prenom</th>
+                  <th colspan="2">Adresse email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>pierre</td>
+                  <td colspan="2">louis</td>
+                  <td colspan="2">pierregaulois@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Koffa</td>
+                  <td>koka</td>
+                  <td>konnii</td>
+                  <td>lol@gmail.com</td>
+                  <td>youyou@gmail.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section>
+            <table>
+              <caption>
+                tableau d'essai 2
+              </caption>
+              <thead>
+                <th>Prénom</th>
+                <th>Adresse email</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">pierre</td>
+                  <td>feofeojfef@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>pv@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Pauline</td>
+                  <td>pauline@gmail.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+
+      <!-- Operation sur les images -->
+      <div class="audVid">
+        <h4>Medias</h4>
+        <img src="../images/medecine2.jpg" alt="une photo de medecine" />
+      </div>
+
+      <!-- Insertion de l'audio -->
+      <audio
+        controls="controls"
+        loop="loop"
+        autopla
+        preload="auto"
+        src="../audios/Damso_-_Pos_idon_(mp3.pm).mp3"
+        src="../audios/Damso_-_Pos_idon_(mp3.pm).ogg"
+      ></audio>
+      <!-- le .ogg pour les anciennes versions de navigateur -->
+      <section>
+        <video
+          controls="controls"
+          poster="../images/toofan.jpg"
+          src="../videos/toofan-cest-pas-normal-clip-officiel.mp4"
+          src="../videos/toofan-cest-pas-normal-clip-officiel.ogg"
+        >
+          Il serait temps de mettre votre navigateur a jour votre navigateur
+        </video>
+      </section>
+      <section>
+        <figure>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/7iocuaNHAJo?si=KxD8oZ8P-46sldrx"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <figcaption>Video utile</figcaption>
+        </figure>
+      </section>
+      <!-- Notation css short-hand et long-hand -->
+      <div></div>
+
+      <!-- *,+,> , div[class]pour cibler des elemnts css -->
+
+      <!-- Les pseudos classes -->
+      <div>
+        <p>Je suis le premier élément du chapitre pseudo-class</p>
+        <p>Je suis le dernier élément du chapitre pseudo-class</p>
+      </div>
+      <!-- Les pseudos éléments first-line,first-letter,selection,before,after -->
+
+      <!-- Les frises  d'images-->
+      <div class="logo">
+        <!-- Insertion des logos pour aller sur divers sites avec des liens  -->
+        <a href="https://www.android-1.com" id="app" target="_blank"></a>
+        <a href="https://www.messenger.fr" id="mes" target="_blank"></a>
+        <a href="https://www.wordpress.com" id="wp" target="_blank"> </a>
+        <a href="https://www.twitter.com" id="tw" target="_blank"> </a>
+        <p id="espace">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
+          quaerat consequatur sunt, natus dolorem delectus vitae praesentium
+          magnam, voluptatem quo facilis iure ratione laudantium aliquid hic
+          incidunt, dicta perferendis in sed. Quis quibusdam perspiciatis velit
+          rem at iusto molestiae aliquam. A in veritatis deserunt perspiciatis
+          sapiente. Distinctio fugit illum, accusamus voluptas dolorem ullam quo
+          voluptatum cumque quasi beatae explicabo dignissimos corporis
+          laudantium veritatis quis consequatur reprehenderit. Mollitia
+          sapiente, non neque saepe earum quae! Temporibus quae porro,
+          reiciendis autem repellat, repellendus eligendi quia et nulla quis
+          optio magnam soluta laborum. Eos, inventore tempore hic dolorum fugiat
+          similique, animi dolor at, quos pariatur eveniet officia aut rerum.
+          Magnam nisi odio tenetur, inventore iure ab quasi repellat corporis
+          vero sapiente atque nesciunt. Voluptatibus ratione deserunt aspernatur
+          reiciendis at! Nam officia odio dolorum velit recusandae voluptate
+          totam, corporis repellendus, ullam vel assumenda nulla vero neque,
+          magnam repudiandae cum nisi quasi. Incidunt quod molestias voluptate
+          libero commodi, asperiores quam fugit dolore illo reprehenderit
+          ratione accusamus facilis magni sit doloribus odit perspiciatis
+          voluptas! Cupiditate minima eveniet itaque ipsa accusantium sapiente
+          assumenda eligendi, fuga possimus sunt veniam quos iusto. Molestias
+          nihil beatae, voluptatem ea architecto magnam labore fuga nulla harum
+          officia aspernatur minus. Odio qui veniam itaque officiis, sapiente
+          possimus molestiae recusandae neque esse fuga reprehenderit quod ullam
+          nostrum animi ea ipsam iusto quaerat excepturi eaque natus impedit
+          vitae adipisci. Consequatur reiciendis tempore quam corrupti,
+          dignissimos natus dolorem. Iste, neque itaque provident repellat,
+          eaque quidem nulla placeat eius suscipit ratione amet laboriosam minus
+          animi perspiciatis dolores atque.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
